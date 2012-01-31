@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<FrameLayout android:id="@+id/FrameContainer"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+		<SurfaceView android:id="@+id/CameraPreviewContainer"
+			android:layout_width="fill_parent" android:layout_height="fill_parent" />
+		<RelativeLayout android:id="@+id/buttonsContainer"
+			android:layout_height="fill_parent" android:layout_width="fill_parent">
+			<ImageButton android:id="@+id/click" android:src="@drawable/ic_menu_camera"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true" />
+			<ImageButton android:id="@+id/save" android:src="@drawable/ic_menu_save"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentLeft="true" />
+			<ImageButton android:id="@+id/delete" android:src="@drawable/ic_menu_delete"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentRight="true" />
+			
+		</RelativeLayout>
+	</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/widget_shape">
+
+	<FrameLayout android:id="@+id/FrameContainer"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_margin="4dip">
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<Button android:id="@+id/batteryColor1" android:background="@drawable/button_color"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:layout_alignParentBottom="true" />
+				
+			<Button android:id="@+id/batteryColor2" android:background="@drawable/button_color"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:layout_above="@+id/batteryColor1" />
+				
+			<Button android:id="@+id/batteryColor3" android:background="@drawable/button_color"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:layout_above="@+id/batteryColor2" />
+				
+			<Button android:id="@+id/batteryColor4" android:background="@drawable/button_color"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:layout_above="@+id/batteryColor3" />
+			
+			<Button android:id="@+id/batteryColor5" android:background="@drawable/button_color"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:layout_above="@+id/batteryColor4" />
+			
+			
+			<TextView android:id="@+id/batteryLevel" android:textSize="25px"
+				android:textColor="#000000" android:text="" android:textStyle="bold"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true" />
+
+		</RelativeLayout>
+
+	</FrameLayout>
+
+</LinearLayout>
